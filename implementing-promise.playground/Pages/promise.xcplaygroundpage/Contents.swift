@@ -102,7 +102,7 @@ extension Promise {
     }
 }
 
-/// Convienent Then
+/// convenient Then
 extension Promise {
     func then<R>(onFulfilled: @escaping (T) -> R) -> Promise<R> {
         return then(onFulfilled: onFulfilled, onRejected: { _ in })
